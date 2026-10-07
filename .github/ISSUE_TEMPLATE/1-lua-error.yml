@@ -1,0 +1,37 @@
+name: Lua error
+description: You got a BugSack report or the default Lua error pop-up mentioning GearSentry.
+title: "[Error] "
+labels: ["bug", "lua-error"]
+body:
+  - type: textarea
+    id: error
+    attributes:
+      label: Error text
+      description: Paste the whole error from BugSack (or the default error pop-up), including the stack trace and the "Locals" section if shown.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: doing
+    attributes:
+      label: What were you doing?
+      description: E.g. looting, opening bags, clicking the upgrade pop-up, changing talents, opening the options.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: GearSentry version
+      description: Shown in the AddOns list or the CurseForge app.
+    validations:
+      required: true
+  - type: input
+    id: character
+    attributes:
+      label: Class / spec / level
+      placeholder: Warrior / Fury / 34
+  - type: textarea
+    id: addons
+    attributes:
+      label: Other bag or tooltip addons
+      description: E.g. BetterBags, Bagnon, TipTac. "None" is a fine answer.

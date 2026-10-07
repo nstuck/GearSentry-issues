@@ -1,0 +1,15 @@
+name: Feature request
+description: An idea, a missing option, or a change to how GearSentry behaves.
+title: "[Feature] "
+labels: ["feature-request"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why? What problem does it solve for you?

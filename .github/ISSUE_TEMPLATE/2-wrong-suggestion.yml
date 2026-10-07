@@ -1,0 +1,58 @@
+name: Wrong upgrade suggestion
+description: GearSentry called something an upgrade that isn't, or missed a real upgrade.
+title: "[Suggestion] "
+labels: ["wrong-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The output of `/gs eval` is the most useful thing you can paste. Type `/gs eval ` in chat, then shift-click the item so its link follows, and press Enter.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What went wrong?
+      options:
+        - It suggested an item that isn't an upgrade
+        - It missed an item that is an upgrade
+        - It picked the wrong slot to replace (rings, trinkets, one-hand weapons)
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: eval
+    attributes:
+      label: /gs eval output
+      description: Paste everything GearSentry printed for `/gs eval [item]`.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: equipped
+    attributes:
+      label: What you have equipped in that slot
+      description: Shift-click the equipped item(s) into the chat box, then copy the text here, or just type the item names.
+  - type: textarea
+    id: why
+    attributes:
+      label: Why you think it's wrong
+      description: E.g. "the new item has more Strength and Stamina but it said no".
+    validations:
+      required: true
+  - type: input
+    id: character
+    attributes:
+      label: Class / spec / level
+      placeholder: Paladin / Holy / 40
+    validations:
+      required: true
+  - type: input
+    id: profile
+    attributes:
+      label: Weight profile
+      description: Output of `/gs profile`, and whether you edited weights on the Stat Weights page.
+  - type: input
+    id: version
+    attributes:
+      label: GearSentry version
+    validations:
+      required: true
