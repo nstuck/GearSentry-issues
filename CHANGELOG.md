@@ -1,5 +1,9 @@
 # GearSentry
 
+## v0.3.1
+
+- GearSentry is now open source under the MIT license. The source of every release is on GitHub: [nstuck/GearSentry](https://github.com/nstuck/GearSentry).
+
 ## v0.3.0
 
 - Upgrades that are already in your bags when you log in or reload now get the pop-up a few seconds after you enter the world. Before, they only showed in the tooltip and bag arrows. Turn this off with "Alert for upgrades already in bags at login" in the options.

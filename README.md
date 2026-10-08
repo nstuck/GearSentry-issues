@@ -9,6 +9,13 @@ something is better. Then it equips the item with one click.
 
 GearSentry is in **beta**, like Forever itself. See [Known limitations](#known-limitations).
 
+**About this repository:** the [`GearSentry/`](GearSentry/) folder holds the source of the latest
+release, the same files the CurseForge download installs, and each release is tagged. It's
+open source under the [MIT license](LICENSE), but not open contribution: it's written and
+maintained by one developer, so pull requests aren't accepted. Bug reports and ideas are very
+welcome as [issues](../../issues/new/choose), and under the MIT license you're free to fork it and
+change it for yourself.
+
 **Contents:** [Report a problem](#report-a-problem) · [Features](#features) ·
 [Options](#options) · [Commands](#commands) · [Known limitations](#known-limitations) ·
 [Working as designed](#working-as-designed)
@@ -158,3 +165,7 @@ Players sometimes report these as bugs, but they're intentional:
   Paladin isn't listed on a Mage.
 - Right after login, nothing is scanned until your equipped items have finished loading.
 - BetterBags arrows need GearSentry picked as BetterBags' "Upgrade Icon Provider".
+
+## License
+
+GearSentry is open source under the [MIT license](LICENSE).

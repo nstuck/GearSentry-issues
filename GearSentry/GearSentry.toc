@@ -1,0 +1,35 @@
+## Interface: 16001
+## Title: GearSentry
+## Notes: Finds upgrades for equipped gear in your bags and offers to equip them.
+## Author: salmaldonado
+## Version: v0.3.1
+## SavedVariables: GearSentryDB
+## OptionalDeps: BetterBags
+## X-License: MIT
+## Category: Inventory
+# CurseForge project (authors.curseforge.com project 1731389); the packager
+# uploads there on a tag push.
+## X-Curse-Project-ID: 1731389
+## AddonCompartmentFunc: GearSentry_OnAddonCompartmentClick
+## AddonCompartmentFuncOnEnter: GearSentry_OnAddonCompartmentEnter
+## AddonCompartmentFuncOnLeave: GearSentry_OnAddonCompartmentLeave
+# Our own icon: 64x64 uncompressed 32-bit TGA. No extension, so the client
+# picks the file up the way BugSack's icon is.
+## IconTexture: Interface\AddOns\GearSentry\Media\icon
+
+Locales/enUS.lua
+Core.lua
+ItemData.lua
+Weights.lua
+Evaluator.lua
+Profiles.lua
+Report.lua
+Player.lua
+Scanner.lua
+Alerts.lua
+Tooltip.lua
+BagArrows.lua
+BetterBags.lua
+Equip.lua
+Options.lua
+WeightsEditor.lua
